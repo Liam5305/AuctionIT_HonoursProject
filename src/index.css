@@ -56,13 +56,14 @@ h1, h2, p, ul, li {
     float: right;
 }
 
-.seasonal-advert {
-    background-color: #4361FF;
+.seasonal-advert h2 {
     color: white;
-    padding: 20px;
-    margin: 0;
-    box-sizing: border-box;
-    border: 1px solid #354ecc;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.seasonal-advert h3 {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul.header li {
@@ -160,7 +161,7 @@ textarea[type=text]:focus {
     background-color: #dfdbdb;
     padding: 15px;
     box-shadow: 5px 5px 5px #888888;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .featured-items img {
@@ -185,4 +186,18 @@ textarea[type=text]:focus {
     background-color: #4C74DC;
     border-color: #f8f8f8;
     color: #f8f8f8;
+}
+
+.browseheader label {
+    text-align: center;
+    float: left;
+    position: relative;
+    background-color: #dfdbdb;
+    padding: 15px;
+    box-shadow: 5px 5px 5px #888888;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Dashboard {
+    float: right;
 }

@@ -1,0 +1,155 @@
+body {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+h1, h2, p, ul, li {
+    font-family: sans-serif;
+}
+
+.auction-header {
+    background-color: #4C74DC;
+    color: white;
+    padding: 10px;
+}
+
+.auction-header h1 {
+    text-shadow: 2px 2px black;
+}
+
+.auction-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 3;
+}
+
+.auction-header li {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.auction-header li :link {
+    color: white;
+    text-decoration: none;
+}
+
+.auction-header li :visited {
+    color: white;
+    text-decoration: none;
+}
+
+.auction-header li :active {
+    color: black;
+    text-decoration: underline;
+}
+
+.auction-header li :hover {
+    background-color: #5873FF;
+    text-decoration: none;
+}
+
+.second-nav {
+    float: right;
+}
+
+.seasonal-advert {
+    background-color: #4361FF;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #354ecc;
+}
+
+ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.header {
+    background-color: #111;
+    padding: 0;
+}
+
+ul.header li a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+.content {
+    background-color: #FFF;
+    padding: 20px;
+  }
+
+.content h2 {
+    padding: 0;
+    margin: 0;
+  }
+
+.content li {
+    margin-bottom: 10px;
+  }
+
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 0.3px solid rgb(94, 92, 92);
+    background-color: lightgrey;
+}
+
+input[type=text]:focus {
+    background-color: rgb(129, 127, 127);
+}
+
+input[type=text]::placeholder {
+    font-size: 25px;
+    align-content: center;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    border: 0.3px solid rgb(94, 92, 92);
+    background-color: lightgrey;
+}
+
+textarea[type=text]:focus {
+    background-color: rgb(129, 127, 127);
+}
+
+.register-form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    justify-content: center;
+}
+
+.register-form p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

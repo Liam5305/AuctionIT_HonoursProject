@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {
     Routes,
     Route,
@@ -7,12 +7,13 @@ import {
 } from "react-router-dom";
 import HomePage from "./Home";
 import BrowsePage from "./Browse";
-import sellPage from "./Sell";
+import SellPage from "./Sell";
 import ContactUs from "./Contact";
 import AboutUs from "./About";
-import myAuctions from "./MyAuctions";
+import MyAuctions from "./MyAuctions";
 import JoinPage from "./JoinUs";
 import RegisterPage from "./Register";
+import TabPanel from "./TabPanel";
 
 function Main() {
     return (
@@ -37,10 +38,10 @@ function Main() {
                     <Routes>
                         <Route exact path="/" element={<HomePage />} />
                         <Route path="/browse" element={<BrowsePage />} />
-                        <Route path="/sell" element={<sellPage />} />
-                        <Route path="/contact" element={<ContactUs />} />
+                        <Route path="/sell" element={<SellPage />} />
+                        <Route path="/contact" element={<ContactUs />, <TabPanel />} />
                         <Route path="/about" element={<AboutUs />} />
-                        <Route path="/my-auctions" element={<myAuctions />} />
+                        <Route path="/my-auctions" element={<MyAuctions />} />
                         <Route path="/join" element={<JoinPage />} />
                         <Route path="/register" element={<RegisterPage />} />
                     </Routes>

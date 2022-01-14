@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import bagImg from "./imgs/backpack1.png";
 import laptopImg from "./imgs/laptop1.png";
 import notepadImg from "./imgs/notepad1.jpg";

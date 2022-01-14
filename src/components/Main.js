@@ -5,15 +5,15 @@ import {
     NavLink,
     HashRouter
 } from "react-router-dom";
-import HomePage from "./Home";
-import BrowsePage from "./Browse";
-import SellPage from "./Sell";
-import ContactUs from "./Contact";
-import AboutUs from "./About";
-import MyAuctions from "./MyAuctions";
-import JoinPage from "./JoinUs";
-import RegisterPage from "./Register";
-import TabPanel from "./TabPanel";
+import HomePage from "./pages/Home";
+import BrowsePage from "./pages/Browse";
+import SellPage from "./pages/Sell";
+import ContactUs from "./pages/Contact";
+import AboutUs from "./pages/About";
+import MyAuctions from "./pages/MyAuctions";
+import JoinPage from "./pages/JoinUs";
+import RegisterPage from "./pages/Register";
+import TabPanel from "../components/TabPanel";
 
 function Main() {
     return (
@@ -40,7 +40,7 @@ function Main() {
                         <Route path="/browse" element={<BrowsePage />} />
                         <Route path="/sell" element={<SellPage />} />
                         <Route path="/contact" element={<ContactUs />, <TabPanel />} />
-                        <Route path="/about" element={<AboutUs />} />
+                        <Route path="/about" element={<AboutUs />, <TabPanel />} />
                         <Route path="/my-auctions" element={<MyAuctions />} />
                         <Route path="/join" element={<JoinPage />} />
                         <Route path="/register" element={<RegisterPage />} />

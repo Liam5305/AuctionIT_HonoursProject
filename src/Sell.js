@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
+import imageNotAvail from "./imgs/Image_not_available.png"
 
 class Sell extends Component {
 
@@ -9,7 +10,7 @@ class Sell extends Component {
         return (
             <div className="sell-items">
                 <form>
-                    <img src="imgs/Image_not_available.png" alt="No Image" width="400" height="350" ></img>
+                    <img src={imageNotAvail} alt="No Image" width="400" height="350" ></img>
                         <Box style={{display:"flex", justifyContent:"left", flexWrap:"wrap", listStyle:"none"}}>
                             <ButtonGroup variant="contained" aria-label="outlined primary button group">
                                 <Button>Add Image</Button>

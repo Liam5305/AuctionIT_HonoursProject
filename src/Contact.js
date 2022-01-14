@@ -1,14 +1,14 @@
 import React, { Component } from "react";
+import TextField from "@mui/material/TextField";
 
-class Contact extends Component {
-    render() {
-        return (
-            <div>
-                <h2>How can the team help you today?</h2>
-                
-            </div>
-        );
-    }
+function ContactPage() {
+    return (
+        <div className="team-help">
+            <h2>How can the team help you today?</h2>
+            <br/>
+            <TextField id="oulined-basic" label="Search AuctionIt Help!"variant="outlined" />
+        </div>
+    );
 }
 
-export default Contact;
+export default ContactPage;

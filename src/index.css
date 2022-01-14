@@ -153,3 +153,36 @@ textarea[type=text]:focus {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.featured-items label {
+    text-align: center;
+    float: left;
+    background-color: #dfdbdb;
+    padding: 15px;
+    box-shadow: 5px 5px 5px #888888;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.featured-items img {
+    display: inline-block;
+    justify-content: center;
+}
+
+.team-help {
+    background-color: #4C74DC;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #354ecc;
+}
+
+.team-help h2 {
+    color: white;
+}
+
+.team-help TextField {
+    background-color: #4C74DC;
+    border-color: #f8f8f8;
+    color: #f8f8f8;
+}

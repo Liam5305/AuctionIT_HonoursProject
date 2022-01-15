@@ -201,3 +201,21 @@ textarea[type=text]:focus {
 .Dashboard {
     float: right;
 }
+
+.auctionabout-img {
+    position: absolute;
+}
+
+.team-pictures {
+    margin: auto;
+    width: 10%;
+    border: 2px solid black;
+    padding: 2px;
+    position: relative;
+}
+
+.team-pictures h2 {
+    background-color: grey;
+    color: white;
+    padding: 3px;
+}

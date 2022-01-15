@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import aboutImg from "../imgs/Auction.jpg";
+import noImg from "../imgs/Image_not_available.png";
 
 function AboutTabs(props) {
     const { children, value, index, ...other } = props;
@@ -55,20 +56,23 @@ export default function BasicTabs() {
                     <Tab label="Careers" {...a11yProps(2)} />
                 </Tabs>
             </Box>
-            <div className="auctionabout-img">
+                <div className="auctionabout-img">
+                    <AboutTabs value={value} index={0}>
+                        <img src={aboutImg} alt="auction" width="350" height="350" ></img>
+                    </AboutTabs>
+                </div>
                 <AboutTabs value={value} index={0}>
+                </AboutTabs>
+                <div className='team-pictures'>
+                    <img src={noImg} alt="auction" width="150" height="150" ></img>
+                    <h2>Chief Executive Officer - Liam</h2>
+                </div>
+                <AboutTabs value={value} index={1}>
                     <img src={aboutImg} alt="auction" width="350" height="350" ></img>
                 </AboutTabs>
-            </div>
-            <AboutTabs value={value} index={0}>
-
-            </AboutTabs>
-            <AboutTabs value={value} index={1}>
-                <img src={aboutImg} alt="auction" width="350" height="350" ></img>
-            </AboutTabs>
-            <AboutTabs value={value} index={2}>
-                <img src={aboutImg} alt="auction" width="350" height="350" ></img>
-            </AboutTabs>
-        </Box>
+                <AboutTabs value={value} index={2}>
+                    <img src={aboutImg} alt="auction" width="350" height="350" ></img>
+                </AboutTabs>
+            </Box>
     );
 }

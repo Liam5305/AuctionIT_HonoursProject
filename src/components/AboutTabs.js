@@ -4,8 +4,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import aboutImg from "../imgs/Auction.jpg";
 
-function TabPanel(props) {
+function AboutTabs(props) {
     const { children, value, index, ...other } = props;
 
     return (
@@ -25,7 +26,7 @@ function TabPanel(props) {
     );
 }
 
-TabPanel.propTypes = {
+AboutTabs.propTypes = {
     children: PropTypes.node,
     index: PropTypes.number.isRequired,
     value: PropTypes.number.isRequired,
@@ -49,34 +50,25 @@ export default function BasicTabs() {
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Google Map" {...a11yProps(0)} />
-                    <Tab label="HQ Address Details" {...a11yProps(1)} />
-                    <Tab label="Contact Details" {...a11yProps(2)} />
+                    <Tab label="About" {...a11yProps(0)} />
+                    <Tab label="The Team" {...a11yProps(1)} />
+                    <Tab label="Careers" {...a11yProps(2)} />
                 </Tabs>
             </Box>
-            <TabPanel value={value} index={0}>
-                Google Map
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-                <h3>Buchanan Galleries</h3>
-                <p>Glasgow</p>
-                <p>G1 2GF</p>
-                <p>Floor G-2 Buchanan Galleries</p>
-                <hr/>
-                <p>Monday   10am-6pm</p>
-                <p>Tuesday   9.30am-6pm</p>
-                <p>Wednesday   9.30am-6pm</p>
-                <p>Thursday   9.30am-7pm</p>
-                <p>Friday   9.30am-6pm</p>
-                <p>Saturday   9am-6pm</p>
-                <p>Sunday   10am-6pm</p>
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-                <h2>CEO - Liam Rutherford</h2>
-                <h3>Owner of AuctionIt</h3>
-                <p>Phone Number - 0141 774 2214</p>
-                <p>Email Address - l.rutherford@aucit.com</p>
-            </TabPanel>
+            <div className="auctionabout-img">
+                <AboutTabs value={value} index={0}>
+                    <img src={aboutImg} alt="auction" width="350" height="350" ></img>
+                </AboutTabs>
+            </div>
+            <AboutTabs value={value} index={0}>
+
+            </AboutTabs>
+            <AboutTabs value={value} index={1}>
+                <img src={aboutImg} alt="auction" width="350" height="350" ></img>
+            </AboutTabs>
+            <AboutTabs value={value} index={2}>
+                <img src={aboutImg} alt="auction" width="350" height="350" ></img>
+            </AboutTabs>
         </Box>
     );
 }

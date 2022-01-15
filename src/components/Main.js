@@ -13,7 +13,8 @@ import AboutUs from "./pages/About";
 import MyAuctions from "./pages/MyAuctions";
 import JoinPage from "./pages/JoinUs";
 import RegisterPage from "./pages/Register";
-import TabPanel from "../components/TabPanel";
+import ContactTabs from "../components/ContactTabs";
+import AboutTabs from "../components/AboutTabs";
 import DashboardPanel from "../components/Dashboard";
 
 function Main() {
@@ -44,8 +45,8 @@ function Main() {
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/browse" element={<BrowsePage />} />
                             <Route path="/sell" element={<SellPage />} />
-                            <Route path="/contact" element={<ContactUs />, <TabPanel />} />
-                            <Route path="/about" element={<AboutUs />} />
+                            <Route path="/contact" element={<ContactUs />, <ContactTabs />} />
+                            <Route path="/about" element={<AboutUs />, <AboutTabs />} />
                             <Route path="/my-auctions" element={<MyAuctions />} />
                             <Route path="/join" element={<JoinPage />} />
                             <Route path="/register" element={<RegisterPage />} />

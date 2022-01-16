@@ -13,9 +13,9 @@ import AboutUs from "./pages/About";
 import MyAuctions from "./pages/MyAuctions";
 import JoinPage from "./pages/JoinUs";
 import RegisterPage from "./pages/Register";
-import ContactTabs from "../components/ContactTabs";
 import AboutTabs from "../components/AboutTabs";
 import DashboardPanel from "../components/Dashboard";
+import SearchBar from "./SearchBar";
 
 function Main() {
     return (
@@ -45,7 +45,7 @@ function Main() {
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/browse" element={<BrowsePage />} />
                             <Route path="/sell" element={<SellPage />} />
-                            <Route path="/contact" element={<ContactUs />, <ContactTabs />} />
+                            <Route path="/contact" element={<ContactUs />, <SearchBar />} />
                             <Route path="/about" element={<AboutUs />, <AboutTabs />} />
                             <Route path="/my-auctions" element={<MyAuctions />} />
                             <Route path="/join" element={<JoinPage />} />

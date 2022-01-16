@@ -61,7 +61,7 @@ export default function BasicTabs() {
                         <img src={aboutImg} alt="auction" width="350" height="350" ></img>
                     </AboutTabs>
                 </div>
-                <AboutTabs value={value} index={0}>
+                <AboutTabs value={value} index={1}>
                 </AboutTabs>
                 <div className='team-pictures'>
                     <img src={noImg} alt="auction" width="150" height="150" ></img>
@@ -71,7 +71,6 @@ export default function BasicTabs() {
                     <img src={aboutImg} alt="auction" width="350" height="350" ></img>
                 </AboutTabs>
                 <AboutTabs value={value} index={2}>
-                    <img src={aboutImg} alt="auction" width="350" height="350" ></img>
                 </AboutTabs>
             </Box>
     );

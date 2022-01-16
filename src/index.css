@@ -99,7 +99,7 @@ ul.header li a {
     margin-bottom: 10px;
   }
 
-input {
+.sell-settings input {
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -218,4 +218,20 @@ textarea[type=text]:focus {
     background-color: grey;
     color: white;
     padding: 3px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 0.1px solid rgb(94, 92, 92);
+    background-color: rgb(240, 238, 238);
 }

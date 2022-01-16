@@ -220,13 +220,22 @@ textarea[type=text]:focus {
     padding: 3px;
 }
 
+/* Search Bar CSS */
 .search-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #4C74DC;
+    padding-bottom: 20px;
+    width: 100%;
 }
 
+.search-bar h2 {
+    color: white;
+}
+
+/* Search Bar Input Field */
 .search-bar input {
     width: 50%;
     padding: 12px 20px;
@@ -236,6 +245,7 @@ textarea[type=text]:focus {
     background-color: rgb(240, 238, 238);
 }
 
+/* Search Bar Boxes */
 .box {
     text-align: left;
     border: black ridge 1px;
@@ -243,4 +253,5 @@ textarea[type=text]:focus {
     margin: 3px;
     width: 20rem;
     padding-left: 10px;
+    color: white;
 }

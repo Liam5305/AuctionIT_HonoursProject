@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./mock-data.json";
+import Data from "./contactinfo.json";
 import { useState } from "react";
 
 function SearchBar() {
@@ -7,7 +7,10 @@ function SearchBar() {
 
     return (
         <div className="search-bar">
-            <label>How can the team help you today?</label>
+            <div className="title-search">
+                <h2>How can the team help you today?</h2>
+            </div>
+
             <input placeholder="Search AuctionIt Admins" onChange={event => setQuery(event.target.value)} />
 
             {

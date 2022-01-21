@@ -256,6 +256,15 @@ textarea[type=text]:focus {
     color: white;
 }
 
+.feat-items {
+    background-color: #D6D6D6;
+    border-radius: 10px;
+    padding: 10px 7px 10px 7px;
+    font-size: 20px;
+    font-weight: bold;
+    display: table;
+}
+
 #auctionBtns {
     float: right;
     background-color: red;

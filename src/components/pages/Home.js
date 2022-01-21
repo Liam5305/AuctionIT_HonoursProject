@@ -40,6 +40,10 @@ function HomePage() {
                 </div>
                 <br />
 
+                <div className="feat-items">
+                    <label>Featured Items</label>
+                </div>
+
                 <div>
 
                     {

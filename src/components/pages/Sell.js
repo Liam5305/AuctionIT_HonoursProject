@@ -31,11 +31,16 @@ function sellPage() {
                 </div>
             </form>
             <div className="auction-viewer">
-                <ButtonGroup variant="contained" aria-label="outlined primary button group">
-                    <Button>My Auctions</Button>
-                    <Button>Completed Auctions</Button>
-                    <Button>Expired Auctions</Button>
-                </ButtonGroup>
+                <Box id="sellButtons">
+                    <div id="auctionBtns">
+                        <Button variant="contained">My Auctions</Button>
+                        <Button variant="contained">Completed Auctions</Button>
+                        <Button variant="contained">Expired Auctions</Button>
+                    </div>
+                    <div id="postBtn">
+                        <Button variant="contained">Post Auction</Button>
+                    </div>
+                </Box>
             </div>
         </div>
     );

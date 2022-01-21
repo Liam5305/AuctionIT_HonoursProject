@@ -225,9 +225,9 @@ textarea[type=text]:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: #4C74DC;
-    padding-bottom: 20px;
+    padding: 20px 20px 20px 20px;
     width: 100%;
 }
 
@@ -254,4 +254,9 @@ textarea[type=text]:focus {
     width: 20rem;
     padding-left: 10px;
     color: white;
+}
+
+#auctionBtns {
+    float: right;
+    background-color: red;
 }

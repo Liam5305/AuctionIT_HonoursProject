@@ -5,10 +5,10 @@ import notepadImg from "../../imgs/notepad1.jpg";
 import Button from "@mui/material/Button";
 import { shadows } from '@mui/system';
 import Box from '@mui/material/Box';
-import auctionItemsData from "../auction-items.json";
+import { aucItems } from "../auction-items.js";
 
 function HomePage() {
-    const [item, setItems] = useState("")
+    const [item] = useState("")
 
     return (
         <>
@@ -43,7 +43,7 @@ function HomePage() {
                 <div>
 
                     {
-                        auctionItemsData.filter(post => {
+                        aucItems.filter(post => {
                             if (item === '') {
                                 return post;
                             } else if (post.item.toLowerCase().includes(item.toLowerCase())) {
@@ -51,12 +51,14 @@ function HomePage() {
                             }
                         }).map((post, index) => (
                             <div className="auction-items" key={index}>
-                                <h3>{post.item}</h3>
-                                <p>Current Bid:</p>
-                                <div id="post-price">
-                                    <p>£{post.price}</p>
+                                <div id="auc-img">
+                                    <img src={post.image} alt="{post.image}" width={325} height={225} />
                                 </div>
-                                <button>Select</button>
+                                <h3>{post.item}</h3>
+                                <h4>Current Bid:</h4>
+                                <div id="post-price">
+                                    <h5>£{post.price}</h5>
+                                </div>                                  <button>Select</button>
                             </div>
                         ))
                     }

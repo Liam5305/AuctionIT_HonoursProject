@@ -5,7 +5,7 @@ import notepadImg from "../../imgs/notepad1.jpg";
 import Button from "@mui/material/Button";
 import { shadows } from '@mui/system';
 import Box from '@mui/material/Box';
-import { aucItems } from "../auction-items.js";
+import { FeaturedItems } from "../AuctionArray/FeaturedItems.js";
 
 function HomePage() {
     const [item] = useState("")
@@ -14,30 +14,33 @@ function HomePage() {
         <>
             <div>
                 <div className="seasonal-advert">
-                    <Box sx={{
-                        boxShadow: 3,
-                        padding: 2,
-                        backgroundColor: "#4361FF"
-                    }} >
-                        <h2>Back to Uni?</h2>
-                        <h3>We've got all that you need!</h3>
+                    <h2>Back to Uni?</h2>
+                    <h3>We've got all that you need!</h3>
+                    <Button
+                        style={{
+                            borderColor: '#f8f8f8',
+                            color: "#f8f8f8"
+                        }}
+                        variant="outlined">Shop Now!
+                    </Button>
+                </div>
 
+                <div className="seasonal-imgs">
+                    <div className="img1">
                         {/* Laptop Image */}
-                        <img src={laptopImg} alt="Laptop" width="200" height="250" ></img>
+                        <img src={laptopImg} alt="Laptop" width="250" height="250" ></img>
+                    </div>
+                    <div className="img2">
                         {/* NotePad Image */}
                         <img src={notepadImg} alt="Notepad" width="200" height="250" ></img>
+                    </div>
+                    <div className="img3">
                         {/* BackPack Image */}
                         <img src={bagImg} alt="BackPack" width="200" height="250" ></img>
-                        <br />
-                        <Button
-                            style={{
-                                borderColor: "#f8f8f8",
-                                color: "#f8f8f8"
-                            }}
-                            variant="outlined">Shop Now!
-                        </Button>
-                    </Box>
+                    </div>
+
                 </div>
+
                 <br />
 
                 <div className="feat-items">
@@ -47,7 +50,7 @@ function HomePage() {
                 <div>
 
                     {
-                        aucItems.filter(post => {
+                        FeaturedItems.filter(post => {
                             if (item === '') {
                                 return post;
                             } else if (post.item.toLowerCase().includes(item.toLowerCase())) {
@@ -62,12 +65,21 @@ function HomePage() {
                                 <h4>Current Bid:</h4>
                                 <div id="post-price">
                                     <h5>£{post.price}</h5>
-                                </div>                                  <button>Select</button>
+                                </div>                                  <Button
+                                    style={{
+                                        borderColor: "#f8f8f8",
+                                        color: "#f8f8f8",
+                                        width: "125px",
+                                        height: "45px",
+                                        fontSize: "10px"
+                                    }}
+                                    variant="outlined">Select This!
+                                </Button>
                             </div>
                         ))
                     }
                 </div>
-            </div>
+            </div >
         </>
     );
 }

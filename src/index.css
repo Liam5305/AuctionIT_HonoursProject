@@ -56,6 +56,13 @@ h1, h2, p, ul, li {
     float: right;
 }
 
+.seasonal-advert {
+    background-color: #4361FF;
+    display: table;
+    display: inline-block;
+    padding: 20px;
+}
+
 .seasonal-advert h2 {
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -305,4 +312,22 @@ textarea[type=text]:focus {
 
 .auction-items h5 {
     color: lime;
+}
+
+.img1 {
+    background-color: #5873FF;
+    display: table;
+    display: inline-block;
+}
+
+.img2 {
+    background-color: #778DFF;
+    display: table;
+    display: inline-block;
+}
+
+.img3 {
+    background-color: #98A8FF;
+    display: table;
+    display: inline-block;
 }

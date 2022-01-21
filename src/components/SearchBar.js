@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./contactinfo.json";
+import Data from "../components/AuctionArray/contactinfo.json";
 import { useState } from "react";
 
 function SearchBar() {

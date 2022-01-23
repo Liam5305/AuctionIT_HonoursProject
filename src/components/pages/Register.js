@@ -24,7 +24,7 @@ function RegisterPage() {
                     <button type="submit" class="registerbtn">Register</button>
 
                     <div class="container-signin">
-                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                        <p>Already have an account? <a href="#/join">Sign in</a>.</p>
                     </div>
                 </div>
             </div>

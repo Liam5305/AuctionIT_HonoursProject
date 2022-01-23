@@ -25,21 +25,19 @@ function HomePage() {
                     </Button>
                 </div>
 
-                <div className="seasonal-imgs">
-                    <div className="img1">
-                        {/* Laptop Image */}
-                        <img src={laptopImg} alt="Laptop" width="250" height="250" ></img>
-                    </div>
-                    <div className="img2">
-                        {/* NotePad Image */}
-                        <img src={notepadImg} alt="Notepad" width="200" height="250" ></img>
-                    </div>
-                    <div className="img3">
-                        {/* BackPack Image */}
-                        <img src={bagImg} alt="BackPack" width="200" height="250" ></img>
-                    </div>
-
+                <div className="img1">
+                    {/* Laptop Image */}
+                    <img src={laptopImg} alt="Laptop" width="250" height="250" ></img>
                 </div>
+                <div className="img2">
+                    {/* NotePad Image */}
+                    <img src={notepadImg} alt="Notepad" width="200" height="250" ></img>
+                </div>
+                <div className="img3">
+                    {/* BackPack Image */}
+                    <img src={bagImg} alt="BackPack" width="200" height="250" ></img>
+                </div>
+
 
                 <br />
 
@@ -65,7 +63,9 @@ function HomePage() {
                                 <h4>Current Bid:</h4>
                                 <div id="post-price">
                                     <h5>£{post.price}</h5>
-                                </div>                                  <Button
+                                </div>
+                                <h4>Start Date: {post.startdate}</h4>
+                                <h4>End Date: {post.enddate}</h4>                                  <Button
                                     style={{
                                         borderColor: "#f8f8f8",
                                         color: "#f8f8f8",

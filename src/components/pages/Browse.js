@@ -33,7 +33,7 @@ function BrowsePage() {
                             <Button
                                 style={{
                                     borderColor: "#f8f8f8",
-                                    color: "#f8f8f8",
+                                    backgroundColor: "#b0b0b0",
                                     width: "125px",
                                     height: "45px",
                                     fontSize: "10px"
@@ -70,10 +70,10 @@ function BrowsePage() {
                             <Button
                                 style={{
                                     borderColor: "#f8f8f8",
-                                    color: "#f8f8f8",
+                                    backgroundColor: "#b0b0b0",
                                     width: "125px",
                                     height: "45px",
-                                    fontSize: "10px"
+                                    fontSize: "10px",
                                 }}
                                 variant="outlined">Select This!
                             </Button>

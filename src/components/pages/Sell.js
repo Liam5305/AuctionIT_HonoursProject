@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import imageNotAvail from "../../imgs/Image_not_available.png"
+import noImg from "../../imgs/Image_not_available.png"
 
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -12,20 +12,19 @@ const Input = styled('input')({
     display: 'none',
 });
 
-function AddData() {
-    const [ item, setItems ] = useState([])
+function SellPage() {
 
-    const handleClick = () => {
+    const [list, setList] = useState([]);
 
-    }
-}
-
-function sellPage() {
+    function AddData() {
+        const items = list;
+        setList([...items, `item-${items.length}`]);
+    };
 
     return (
         <div className="sell-items">
             <form>
-                <img src={imageNotAvail} alt="No Image" width="400" height="350" ></img>
+                <img src={noImg} alt="No Image" width="400" height="350" ></img>
                 <Box style={{ display: "flex", justifyContent: "left", flexWrap: "wrap", listStyle: "none" }}>
                     <Stack>
                         <label htmlFor="contained-button-file">
@@ -64,4 +63,4 @@ function sellPage() {
     );
 }
 
-export default sellPage;
+export default SellPage;

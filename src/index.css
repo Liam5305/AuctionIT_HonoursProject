@@ -268,41 +268,100 @@ textarea[type=text]:focus {
     padding: 3px;
 }
 
-/* Search Bar CSS */
-.search-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+.search {
     background-color: #4C74DC;
-    padding: 20px 20px 20px 20px;
+    display: flex;
     width: 100%;
+    height: 250px;
 }
 
-.search-bar h2 {
+.search h1 {
     color: white;
+    padding-left: 40px;
 }
 
-/* Search Bar Input Field */
-.search-bar input {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 0.1px solid rgb(94, 92, 92);
-    background-color: rgb(240, 238, 238);
-}
+.searchInputs {
+    margin-top: 105px;
+    display: flex;
+    margin-left: -525px;
+  }
+  
+  .search input {
+    background-color: #E8E8E8;
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 300px;
+    display: table;
+  }
+  
+  .searchIcon {
+    height: 60px;
+    width: 50px;
+    background-color: #E8E8E8;
+    display: grid;
+    place-items: center;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  .searchIcon svg {
+    font-size: 35px;
+  }
+  
+  .dataResult {
+    margin-top: 5px;
+    width: 300px;
+    height: 275px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+  .dataResult::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: table;
+    align-items: center;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .dataItem h2 {
+      padding-top: 10px;
+      padding-left: 2px;
+      margin-left: 10px;
+      text-decoration-line: underline;
+  }
 
-/* Search Bar Boxes */
-.box {
-    text-align: left;
-    border: black ridge 1px;
-    border-radius: 10px;
-    margin: 3px;
-    width: 20rem;
-    padding-left: 10px;
-    color: white;
-}
+  .dataItem h3 {
+      margin-left: 15px;
+  }
+
+  .dataItem p {
+    margin-left: 25px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: lightgrey;
+  }
+  
+  #clearBtn {
+    cursor: pointer;
+  }
 
 .feat-items {
     background-color: #D6D6D6;

@@ -3,7 +3,11 @@ import React from "react";
 function ContactPage() {
 
     return (
-        <></>
+        <>
+        
+        
+        
+        </>
     )
 }
 

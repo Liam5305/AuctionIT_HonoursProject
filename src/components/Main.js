@@ -45,7 +45,7 @@ function Main() {
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/browse" element={<BrowsePage />} />
                             <Route path="/sell" element={<SellPage />} />
-                            <Route path="/contact" element={<ContactUs />, <SearchBar />} />
+                            <Route path="/contact" element={<ContactUs />, <SearchBar />} /> 
                             <Route path="/about" element={<AboutUs />, <AboutTabs />} />
                             <Route path="/my-auctions" element={<MyAuctions />} />
                             <Route path="/join" element={<JoinPage />} />

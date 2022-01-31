@@ -1,36 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import Data from "../components/AuctionArray/contactinfo.json";
-import { useState } from "react";
+import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from '@mui/icons-material/Close';
 
-function SearchBar() {
-    const [query, setQuery] = useState("")
-
+function SearchBar({placeholder, data}) {
+    const [filteredData, setFilteredData] = useState([]);
+    const [wordEntered, setWordEntered] = useState("");
+  
+    const handleFilter = (event) => {
+      const searchWord = event.target.value;
+      setWordEntered(searchWord);
+      const newFilter = Data.filter((value) => {
+        return value.username.toLowerCase().includes(searchWord.toLowerCase());
+      });
+  
+      if (searchWord === "") {
+        setFilteredData([]);
+      } else {
+        setFilteredData(newFilter);
+      }
+    };
+  
+    const clearInput = () => {
+      setFilteredData([]);
+      setWordEntered("");
+    };
+  
     return (
-        <div className="search-bar">
-            <div className="title-search">
-                <h2>How can the team help you today?</h2>
-            </div>
-
-            <input placeholder="Search AuctionIt Admins" onChange={event => setQuery(event.target.value)} />
-
-            {
-                Data.filter(post => {
-                    if (query === '') {
-                        return post;
-                    } else if (post.first_name.toLowerCase().includes(query.toLowerCase())) {
-                        return post;
-                    }
-                }).map((post, index) => (
-                    <div className="box" key={index}>
-                        <p>{post.first_name}</p>
-                        <p>{post.Country}</p>
-                        <p>{post.email}</p>
-                        <p>{post.username}</p>
-                    </div>
-                ))
-            }
+      <div className="search">
+          <h1>How can the team help you today?</h1>
+        <div className="searchInputs">
+          <input
+            type="text"
+            placeholder="Search AuctionIt Help!"
+            value={wordEntered}
+            onChange={handleFilter}
+          />
+          <div className="searchIcon">
+            {filteredData.length === 0 ? (
+              <SearchIcon />
+            ) : (
+              <CloseIcon id="clearBtn" onClick={clearInput} />
+            )}
+          </div>
         </div>
-    )
-}
-
-export default SearchBar;
+        {filteredData.length != 0 && (
+          <div className="dataResult">
+            {filteredData.slice(0, 15).map((value, key) => {
+              return (
+                <a className="dataItem" href={value.link} target="_blank">
+                  <h2>{value.username}</h2>
+                  <h3>{value.first_name}</h3>
+                  <p>{value.Country}</p>
+                  <p>{value.email}</p>
+                </a>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  }
+  
+  export default SearchBar;

@@ -16,8 +16,8 @@ function PositionedMenu() {
     return (
         <div>
             <Button
-            id="demo-postioned-button"
-            aria-controls={open ? 'demo-positioned-menu' : undefined}
+            id="postioned-button"
+            aria-controls={open ? 'positioned-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
             onClick={handleClick}
@@ -25,8 +25,8 @@ function PositionedMenu() {
                 Dashboard
             </Button>
             <Menu
-            id="demo-postioned-menu"
-            aria-labelledby="demo-postioned-button"
+            id="postioned-menu"
+            aria-labelledby="postioned-button"
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}

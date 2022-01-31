@@ -68,6 +68,7 @@ function HomePage() {
                                 <h4>End Date: {post.enddate}</h4>                                  <Button
                                     style={{
                                         borderColor: "#f8f8f8",
+                                        backgroundColor: "#b0b0b0",
                                         color: "#f8f8f8",
                                         width: "125px",
                                         height: "45px",

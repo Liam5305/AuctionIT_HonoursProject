@@ -98,11 +98,11 @@ ul.header li a {
     background-color: lightgrey;
 }
 
-input[type=text]:focus {
+.sell-settings input[type=text]:focus {
     background-color: rgb(129, 127, 127);
 }
 
-input[type=text]::placeholder {
+.sell-settings input[type=text]::placeholder {
     font-size: 25px;
     align-content: center;
     color: white;
@@ -127,22 +127,80 @@ textarea[type=text]:focus {
 }
 
 .register-form {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    box-sizing: border-box;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    justify-content: center;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #888888;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    display: table;
+    text-align: center;
+    position: absolute;
 }
 
 .register-form p {
+    font-size: 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.registerbtn {
+    background-color: rgb(105, 105, 247);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.login-form-header label {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #D6D6D6;
+    border-radius: 10px;
+    padding: 10px 7px 7px 7px;
+    display: table;
+}
+
+.login-form {
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #888888;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    display: table;
+    text-align: center;
+    position: absolute;
+}
+
+.forgot-password {
+    color: rgb(105, 105, 247);
+    font-weight: bold;
+}
+
+.login-sign-in {
+    background-color: rgb(105, 105, 247);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.sign-in-btn {
+    background-color: rgb(184, 184, 184);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 .featured-items label {
@@ -334,52 +392,4 @@ textarea[type=text]:focus {
     display: table;
     display: inline-block;
     padding: 30px 30px 30px 30px;
-}
-
-.login-form-header label {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #D6D6D6;
-    border-radius: 10px;
-    padding: 10px 7px 7px 7px;
-    display: table;
-}
-
-.login-form {
-    background-color: white;
-    box-shadow: 5px 5px 5px 5px #888888;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-    display: table;
-    text-align: center;
-    position: absolute;
-}
-
-.forgot-password {
-    color: rgb(105, 105, 247);
-    font-weight: bold;
-}
-
-.login-sign-in {
-    background-color: rgb(105, 105, 247);
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-.sign-in-btn {
-    background-color: rgb(184, 184, 184);
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
 }

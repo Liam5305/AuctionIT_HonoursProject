@@ -1,6 +1,7 @@
 export const FeaturedItems = [
     {
-        "id": 1, "item": "Playstation 4",
+        "id": 1, 
+        "item": "Playstation 4",
         "price": 300,
         "image": require("../../imgs/Ps4.png"),
         "startdate": "01/01/2022",

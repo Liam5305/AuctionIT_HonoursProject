@@ -12,6 +12,15 @@ h1, h2, p, ul, li {
     background-color: #4C74DC;
     color: white;
     padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Dashboard {
+    margin-top: -30px;
+}
+
+.Dashboard :hover {
+    background-color: #5873FF;
 }
 
 .auction-header h1 {
@@ -287,7 +296,7 @@ textarea[type=text]:focus {
   }
   
   .search input {
-    background-color: #E8E8E8;
+    background-color: white;
     border: 0;
     border-radius: 2px;
     border-top-right-radius: 0px;
@@ -302,7 +311,7 @@ textarea[type=text]:focus {
   .searchIcon {
     height: 60px;
     width: 50px;
-    background-color: #E8E8E8;
+    background-color: white;
     display: grid;
     place-items: center;
   }
@@ -315,7 +324,8 @@ textarea[type=text]:focus {
   }
   
   .dataResult {
-    margin-top: 5px;
+    margin-top: 165px;
+    margin-left: -380px;
     width: 300px;
     height: 275px;
     background-color: white;
@@ -364,7 +374,8 @@ textarea[type=text]:focus {
   }
 
 .feat-items {
-    background-color: #D6D6D6;
+    background-color: #4C74DC;
+    color: white;
     border-radius: 10px;
     padding: 10px 7px 7px 7px;
     font-size: 20px;
@@ -411,8 +422,17 @@ textarea[type=text]:focus {
     border-radius: 15px;
 }
 
-.auction-items h5 {
-    color: lime;
+#post-price {
+    color: rgb(0, 0, 0);
+}
+
+.post-startdates {
+    text-decoration-line: underline;
+}
+
+.post-enddates {
+    color: red;
+    text-decoration-line: underline;
 }
 
 .seasonal-advert {

@@ -1,4 +1,4 @@
-export const AllItems = [
+export const Items = [
     {
         "id": 1, "item": "Playstation 4",
         "price": 300,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
     Routes,
     Route,
@@ -8,7 +8,7 @@ import {
 import HomePage from "./pages/Home";
 import BrowsePage from "./pages/Browse";
 import SellPage from "./pages/Sell";
-import ContactUs from "./pages/Contact";
+import ContactPage from "./pages/Contact";
 import AboutUs from "./pages/About";
 import MyAuctions from "./pages/MyAuctions";
 import JoinPage from "./pages/JoinUs";
@@ -16,6 +16,7 @@ import RegisterPage from "./pages/Register";
 import AboutTabs from "../components/AboutTabs";
 import DashboardPanel from "../components/Dashboard";
 import SearchBar from "./SearchBar";
+//import FreqQuestions from "./QuestionsTab";
 
 function Main() {
     return (
@@ -45,7 +46,7 @@ function Main() {
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/browse" element={<BrowsePage />} />
                             <Route path="/sell" element={<SellPage />} />
-                            <Route path="/contact" element={<ContactUs />, <SearchBar />} /> 
+                            <Route path="/contact" element={<ContactPage />, <SearchBar />} /> 
                             <Route path="/about" element={<AboutUs />, <AboutTabs />} />
                             <Route path="/my-auctions" element={<MyAuctions />} />
                             <Route path="/join" element={<JoinPage />} />

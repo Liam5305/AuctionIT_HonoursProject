@@ -464,6 +464,7 @@ textarea[type=text]:focus {
     display: table;
     display: inline-block;
     padding: 30px 30px 30px 30px;
+    width: 600px;
 }
 
 .img3 {
@@ -471,4 +472,6 @@ textarea[type=text]:focus {
     display: table;
     display: inline-block;
     padding: 30px 30px 30px 30px;
+    width: 543px;
+    position: absolute;
 }

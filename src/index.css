@@ -374,6 +374,7 @@ textarea[type=text]:focus {
   }
 
 .feat-items {
+    margin-top: 15px;
     background-color: #4C74DC;
     color: white;
     border-radius: 10px;
@@ -438,8 +439,10 @@ textarea[type=text]:focus {
 .seasonal-advert {
     background-color: #4361FF;
     display: table;
-    display: inline-block;
-    padding: 20px;
+    padding: 30px 30px 30px 30px;
+    height: 254px;
+    width: 250px;
+    float: left;
 }
 
 .seasonal-advert h2 {
@@ -472,7 +475,7 @@ textarea[type=text]:focus {
     display: table;
     display: inline-block;
     padding: 30px 30px 30px 30px;
-    width: 543px;
+    width: 505px;
     position: absolute;
 }
 
@@ -481,7 +484,7 @@ textarea[type=text]:focus {
     background-color: #C4C4C4;
     padding: 10px 10px 10px 10px;
     display: table;
-    width: 350px;
+    width: 500px;
     float: right;
     color: white;
 }
@@ -501,7 +504,7 @@ textarea[type=text]:focus {
     padding: 10px 10px 10px 10px;
     float: right;
     margin-right: 10px;
-    width: 400px;
+    width: 500px;
     height: 250px;
     text-align: center;
     color: white;

@@ -475,3 +475,48 @@ textarea[type=text]:focus {
     width: 543px;
     position: absolute;
 }
+
+.freq_questions {
+    margin-top: 35px;
+    background-color: #C4C4C4;
+    padding: 10px 10px 10px 10px;
+    display: table;
+    width: 350px;
+    float: right;
+    color: white;
+}
+
+.f_questions h3 {
+    text-align: center;
+    margin: auto;
+    padding: 5px 5px 5px 5px;
+    background-color: #B1B1B1;
+    border-radius: 10px;
+}
+
+.query_header {
+    margin-top: 35px;
+    background-color: #E5E1E1;
+    display: table;
+    padding: 10px 10px 10px 10px;
+    float: right;
+    margin-right: 10px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    color: white;
+}
+
+.query_items Button {
+    margin-top: 123px;
+}
+
+.query_items input {
+    border-radius: 10px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    display: table;
+    background-color: #C4C4C4;
+    color: white;
+    text-align: center;
+}

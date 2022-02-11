@@ -100,9 +100,10 @@ ul.header li a {
 
 .sellitems-box {
     background-color: #E6E6E6;
-    padding: 50px 50px 50px 50px;
+    padding: 10px 10px 10px 10px;
     border-radius: 15px;
-    width: 500px;
+    width: 770px;
+    height: 670px;
 }
 
 .sellitems-page {
@@ -111,10 +112,15 @@ ul.header li a {
     border-radius: 5px;
 }
 
+.sell-settings {
+    margin-top: -265px;
+}
+
 .sell-settings input {
     width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 15px 15px 15px 15px;
+    display: table;
+    margin: 12px 0;
     border: none;
     background-color: lightgrey;
     border-radius: 5px;
@@ -124,12 +130,13 @@ ul.header li a {
 
 .sell-settings textarea {
     width: 100%;
-    height: 150px;
+    height: 350px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
+    color: white;
     font-size: 16px;
     resize: none;
     border: none;
@@ -138,6 +145,7 @@ ul.header li a {
 
 .sell-settings textarea[type=text]:focus {
     background-color: rgb(129, 127, 127);
+    border: none;
 }
 
 .sell-settings input[type=text]:focus {
@@ -398,6 +406,7 @@ ul.header li a {
     font-weight: bold;
     display: table;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px black;
 }
 
 #auctionBtns {
@@ -537,4 +546,24 @@ ul.header li a {
     background-color: #C4C4C4;
     color: white;
     text-align: center;
+}
+
+.pastauctions-box {
+    background-color: #E6E6E6;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    width: 700px;
+    height: 750px;
+    float: right;
+    margin-top: -690px;
+}
+
+.pastauctions-input {
+    background-color: #C4C4C4;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+    width: 50%;
+    text-align: center;
+    height: 730px;
+    float: right;
 }

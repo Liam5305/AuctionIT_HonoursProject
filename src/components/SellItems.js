@@ -3,12 +3,14 @@ import noImg from "../imgs/Image_not_available.png";
 import { styled } from '@mui/material/styles';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import IconButton from '@mui/material/IconButton';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 function SellPage() {
 
     const Input = styled('input')({
         display: 'none',
-      });
+    });
 
     return (
         <div className="sellitems-box">
@@ -32,7 +34,12 @@ function SellPage() {
                     <br />
                     <input type="text" id="enddate" placeholder="enddate"></input>
                     <br />
-                    <textarea></textarea>
+                    <textarea placeholder="Description"></textarea>
+                    <div className="sell-sendbutton">
+                        <Button variant="contained" endIcon={<SendIcon />}>
+                            Send
+                        </Button>
+                    </div>
                 </form>
             </div>
         </div>

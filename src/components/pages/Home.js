@@ -3,8 +3,6 @@ import bagImg from "../../imgs/backpack1.png"
 import laptopImg from "../../imgs/laptop1.png";
 import notepadImg from "../../imgs/notepad1.jpg";
 import Button from "@mui/material/Button";
-// import { shadows } from '@mui/system';
-// import Box from '@mui/material/Box';
 import { FeaturedItems } from "../AuctionArray/FeaturedItems.js";
 
 function HomePage() {

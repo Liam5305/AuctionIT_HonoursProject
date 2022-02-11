@@ -3,8 +3,8 @@ import bagImg from "../../imgs/backpack1.png"
 import laptopImg from "../../imgs/laptop1.png";
 import notepadImg from "../../imgs/notepad1.jpg";
 import Button from "@mui/material/Button";
-import { shadows } from '@mui/system';
-import Box from '@mui/material/Box';
+// import { shadows } from '@mui/system';
+// import Box from '@mui/material/Box';
 import { FeaturedItems } from "../AuctionArray/FeaturedItems.js";
 
 function HomePage() {
@@ -64,8 +64,12 @@ function HomePage() {
                                 <div id="post-price">
                                     <h5>£{post.price}</h5>
                                 </div>
-                                <h4>Start Date: {post.startdate}</h4>
-                                <h4>End Date: {post.enddate}</h4>                                  <Button
+                                <div className="post-startdates">
+                                    <h4>Start Date: {post.startdate}</h4>
+                                </div>
+                                <div className="post-enddates">
+                                    <h4>End Date: {post.enddate}</h4>
+                                </div>                                  <Button
                                     style={{
                                         borderColor: "#f8f8f8",
                                         backgroundColor: "#b0b0b0",

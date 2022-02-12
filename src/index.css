@@ -284,6 +284,43 @@ ul.header li a {
 
 .auctionabout-img {
     position: absolute;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.about-box {
+    background-color: #F2F2F2;
+    float: right;
+    margin-left: 80px;
+    width: 1300px;
+    height: 320px;
+    text-align: justify;
+    padding: 15px 15px 15px 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    overflow: auto;
+}
+
+.team-box {
+    
+    float: right;
+    margin-left: 80px;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #C4C4C4;
+}
+
+.team-box img {
+    border: 1px solid black;
+    background-color: #ACACAC;
+}
+
+.team-box h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration-line: underline;
 }
 
 .team-pictures {
@@ -506,19 +543,20 @@ ul.header li a {
 .freq_questions {
     margin-top: 35px;
     background-color: #C4C4C4;
-    padding: 10px 10px 10px 10px;
+    padding-top: 5px;
+    padding-left: 10px;
     display: table;
     width: 500px;
     float: right;
     color: white;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.f_questions h3 {
-    text-align: center;
-    margin: auto;
-    padding: 5px 5px 5px 5px;
+.f_questions {
     background-color: #B1B1B1;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .query_header {
@@ -529,9 +567,10 @@ ul.header li a {
     float: right;
     margin-right: 10px;
     width: 500px;
-    height: 250px;
+    height: 315px;
     text-align: center;
     color: white;
+    border-radius: 10px;
 }
 
 .query_items Button {
@@ -552,7 +591,7 @@ ul.header li a {
     background-color: #E6E6E6;
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
-    width: 700px;
+    width: 750px;
     height: 750px;
     float: right;
     margin-top: -690px;
@@ -562,8 +601,8 @@ ul.header li a {
     background-color: #C4C4C4;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
-    width: 50%;
+    width: 600px;
     text-align: center;
-    height: 730px;
+    height: 740px;
     float: right;
 }

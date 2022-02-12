@@ -13,7 +13,7 @@ function FreqQuestions() {
                     <input type="text" id="email" placeholder="Enter Your Email Address"></input>
                     <br /><input type="textarea" id="query" rows="4" cols="50" placeholder="What Is Your Query?"></input>
                     <br />
-                    <Button variant="contained" endIcon={<SendIcon />}>
+                    <Button variant="contained" endIcon={<SendIcon />} href="mailto:auctionit@gmail.com">
                         Send Query
                     </Button>
                 </form>

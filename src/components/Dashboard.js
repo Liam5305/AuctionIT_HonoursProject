@@ -30,7 +30,7 @@ function PositionedMenu() {
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
-            anchorOrigin={{
+            anchorOrigin={{ 
                 vertical: 'top',
                 horizontal: 'left',
             }}

@@ -3,7 +3,7 @@ import bagImg from "../../imgs/backpack1.png"
 import laptopImg from "../../imgs/laptop1.png";
 import notepadImg from "../../imgs/notepad1.jpg";
 import Button from "@mui/material/Button";
-import { FeaturedItems } from "../AuctionArray/FeaturedItems.js";
+import { FeaturedItems } from "../AuctionArray/Items.js";
 
 function HomePage() {
     const [item] = useState("")

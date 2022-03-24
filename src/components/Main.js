@@ -11,7 +11,7 @@ import SellPage from "./pages/Sell";
 import ContactPage from "./pages/Contact";
 import AboutUs from "./pages/About";
 import MyAuctions from "./pages/MyAuctions";
-import JoinPage from "./pages/JoinUs";
+import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
 import DashboardPanel from "../components/Dashboard";
 import ScrollBtn from "./ScrollBtn";
@@ -35,7 +35,7 @@ function Main() {
                                 <li><NavLink to="/about">About-Us</NavLink></li>
                                 <div className="second-nav">
                                     <li><NavLink to="/my-auctions">My-Auctions</NavLink></li>
-                                    <li><NavLink to="/join">Join</NavLink></li>
+                                    <li><NavLink to="/Login">Login</NavLink></li>
                                     <li><NavLink to="/register">Register</NavLink></li>
                                     <div className="Dashboard">
                                         <li><DashboardPanel /></li>
@@ -51,7 +51,7 @@ function Main() {
                                 <Route path="/contact" element={<ContactPage />} />
                                 <Route path="/about" element={<AboutUs />} />
                                 <Route path="/my-auctions" element={<MyAuctions />} />
-                                <Route path="/join" element={<JoinPage />} />
+                                <Route path="/Login" element={<LoginPage />} />
                                 <Route path="/register" element={<RegisterPage />} />
                             </Routes>
                         </div>

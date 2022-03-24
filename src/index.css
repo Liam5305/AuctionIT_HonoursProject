@@ -606,3 +606,31 @@ ul.header li a {
     height: 740px;
     float: right;
 }
+
+.popout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: (0,0,0,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popout-inner {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    height: 70%;
+    max-width: 640px;
+    background-color: white;
+}
+
+.popout-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}

@@ -3,10 +3,12 @@ import { TopSellingItems } from "../AuctionArray/TopSelling";
 import { ItemsClosing } from "../AuctionArray/ClosingSoon";
 import { Items } from "../AuctionArray/Items";
 import Button from "@mui/material/Button";
+import Popout from "../PopOut";
 
 function BrowsePage() {
 
-    const [item] = useState("")
+    const [item] = useState("");
+    const [buttonPopout, setButtonPopout] = useState(false);
     return (
         <>
 
@@ -40,8 +42,14 @@ function BrowsePage() {
                                     height: "45px",
                                     fontSize: "10px"
                                 }}
-                                variant="outlined">Select This!
-                            </Button>
+                                variant="outlined" onClick={() => setButtonPopout(true)}>Select This!</Button>
+                            <Popout trigger={buttonPopout} setTrigger={setButtonPopout}>
+                                <img src={post.image} alt="{post.image}" width={325} height={225} />
+                                <h3>{post.item}</h3>
+                                <h4>Current Bid:</h4>
+                                <h4>£{post.price}</h4>
+                                <Button>Buy</Button>
+                            </Popout>
                         </div>
                     ))
                 }

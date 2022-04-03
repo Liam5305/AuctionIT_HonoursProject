@@ -16,4 +16,4 @@ You may also see any lint errors in the console.
 
 Figma Hybrid Wireframes - 
 
-https://i.gyazo.com/6c048a486ebc7aa12e9978e477b9d312.png
+![image](https://user-images.githubusercontent.com/27654267/161440163-0ce81ee4-395a-4790-b2fc-66386f84082c.png)

@@ -620,6 +620,7 @@ ul.header li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .popout-inner {
@@ -629,6 +630,8 @@ ul.header li a {
     height: 70%;
     max-width: 640px;
     background-color: white;
+    border-style: outset;
+    border-width: 5px;
 }
 
 .popout-inner .close-btn {
